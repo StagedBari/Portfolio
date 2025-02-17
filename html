@@ -13,46 +13,57 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li> <!-- Link to resume.html -->
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="chatbot.html" class="chatbot-link">Chatbot</a></li> <!-- Chatbot Link -->
             </ul>
         </nav>
     </header>
     
     <section id="home">
-        <h2>About Me</h2>
-        <p>Hi, I'm Jabari Jones, a Computer Technology Engineering student passionate about cybersecurity, Linux, and software development.</p>
-        <p>Skills: Snort, Python, Kali Linux, Network Security, Machine Learning in Cybersecurity</p>
-        <p>Education: Currently pursuing CTEC degree</p>
-        <img src="qr_code.png" alt="QR Code to Portfolio">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm <strong>Jabari Jones</strong>, a Computer Technology Engineering student passionate about <strong>cybersecurity, Linux, and software development.</strong></p>
+            <p><strong>Skills:</strong> Snort, Python, Kali Linux, Network Security, Machine Learning in Cybersecurity</p>
+            <p><strong>Education:</strong> Currently pursuing a CTEC degree</p>
+            <img src="qr_code.png" alt="QR Code to Portfolio">
+        </div>
     </section>
     
     <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/JabariJones/project1">Project 1</a></li>
-            <li><a href="https://github.com/JabariJones/project2">Project 2</a></li>
-        </ul>
+        <div class="container">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="https://github.com/JabariJones/project1">Project 1</a></li>
+                <li><a href="https://github.com/JabariJones/project2">Project 2</a></li>
+            </ul>
+        </div>
     </section>
     
     <section id="resume">
-        <h2>Resume</h2>
-        <a href="resume.html">View Resume</a>
+        <div class="container">
+            <h2>Resume</h2>
+            <a href="resume.html" class="btn">View Resume</a>
+        </div>
     </section>
     
     <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
     </section>
     
+    <button id="chatbot-button">Chat with My Resume</button> <!-- Chatbot Button -->
+
     <script src="script.js"></script>
 </body>
 </html>
